@@ -1,5 +1,32 @@
 p{
     padding: 5px;
     margin: 50px;
+}
+
+.padding{
+    padding: 5px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 25px;
+}
+
+#logo{
+    width: 150px;
+    border: 1px solid;
     
+}
+
+.mb{
+    margin-bottom: 30px;
+}
+
+.cc{
+    text-align: center;
+}
+
+.img{
+    /*border: 1px groove;*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }

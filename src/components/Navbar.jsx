@@ -9,11 +9,11 @@ const Navbar = () => {
     //console.log(useContext(usercontext))
     return (
         <>
-        <nav className="breadcrumb container">
+        <nav className="breadcrumb container mb">
             <ul>
-            <li><strong>OL </strong></li>
+            <li id="logo"><strong>Serphp Route </strong></li>
             </ul>
-            <ul> 
+            <ul className="padding"> 
             <NavLink to="/"> Home </NavLink> / 
             {user && <NavLink to="/dashboard"> Dashboard</NavLink>}
             </ul>

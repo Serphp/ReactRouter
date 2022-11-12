@@ -9,7 +9,7 @@ const User = () => {
             
             <Outlet />
 
-            <article> footer </article>
+            <article className="cc"> footer </article>
         </main>
     );
 };
