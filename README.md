@@ -2,5 +2,5 @@
 
 * cd 
 * npm install react-router-dom@6.4
-* npm i
+* npm install
 * npm run dev
