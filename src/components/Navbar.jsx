@@ -14,8 +14,13 @@ const Navbar = () => {
             <li id="logo"><strong>Serphp Route </strong></li>
             </ul>
             <ul className="padding"> 
-            <NavLink to="/"> Home </NavLink> / 
-            {user && <NavLink to="/dashboard"> Dashboard</NavLink>}
+            <NavLink className="pt" to="/"> Home </NavLink> / 
+            {user && 
+                (<> 
+                    <NavLink className="pt" to="/dashboard"> Dashboard</NavLink> 
+                    <NavLink role="button" className="outline" onClick={() => setUser(false)}> Logout </NavLink>
+                </>)   
+            }
             </ul>
         </nav>
         </>

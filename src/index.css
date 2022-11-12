@@ -15,10 +15,24 @@ p{
     
 }
 
+img.rd{
+    width: 450px;
+}
+
+.pt{
+    letter-spacing: 3px;
+    padding: 20px;
+}
+
 .mb{
     margin-bottom: 30px;
 }
 
+h1{
+    text-shadow: 5px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 50px;
+}
 .cc{
     text-align: center;
 }
