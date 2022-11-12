@@ -2,10 +2,17 @@ import { NavLink } from "react-router-dom";
 
 const Navbar = () => {
     return (
-        <nav>
-            <NavLink to="/">Home</NavLink>
-            <NavLink to="/dashboard">Dashboard</NavLink>
+        <>
+        <nav className="breadcrumb container">
+            <ul>
+            <li><strong>OL </strong></li>
+            </ul>
+            <ul> 
+            <NavLink to="/"> Home </NavLink> / 
+            <NavLink to="/dashboard"> Dashboard</NavLink>
+            </ul>
         </nav>
+        </>
     );
 };
 

@@ -6,6 +6,8 @@ const LayoutRoot = () => {
         <>
             <Navbar />
             <Outlet />
+
+            <p> Footer </p>
         </>
     );
 };
