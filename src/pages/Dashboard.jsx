@@ -1,5 +1,13 @@
 const Dashboard = () => {
-    return <h1>Dashboard</h1>;
+    return (<>
+
+    <hgroup>
+    <h2> Admin </h2>
+    <h3> Tablero de administrador </h3>
+    </hgroup>
+
+    <blockquote> Hola </blockquote>
+    </>)
 };
 
 export default Dashboard;

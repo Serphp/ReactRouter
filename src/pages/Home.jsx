@@ -1,11 +1,20 @@
 const Home = () => {
     return (
         <>
-        <h1 className=""> Home </h1>
+        <hgroup>
+        <h2> Home </h2>
+        <h3> Inicio de la pagina </h3>
+        </hgroup>
+
         <div className="img">
             <img className="rd" src="https://i.imgur.com/jM3Nvp8.jpeg" alt="" />
             </div>
-        <p className="cc"> un Origami que encontre por ahi </p>
+        <blockquote className="cc">
+        "Un origami que encontre por ahi, blanco como papel."
+        <footer>
+        <cite>- Bryan</cite>
+        </footer>
+        </blockquote>
         </>
     )
 };

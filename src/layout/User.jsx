@@ -9,7 +9,11 @@ const User = () => {
             
             <Outlet />
 
-            <article className="cc"> footer </article>
+            {/* FOOTER */}
+            <button class="contrast">
+            <a href="https://github.com/Serphp/ReactRouter"><kbd> <img src="src\icons\cat.png" width={30} /> Github</kbd></a>
+            </button>
+            
         </main>
     );
 };

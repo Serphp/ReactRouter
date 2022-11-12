@@ -15,16 +15,16 @@ const Navbar = () => {
         <>
         <nav className="breadcrumb container mb">
             <ul>
-            <li id="logo"><strong>Serphp Route </strong></li>
+            <li id=""><kbd>{'>'} SerphpRoute</kbd></li>
             </ul>
             <ul className="padding"> 
-            <NavLink className="pt" to="/"> Home </NavLink> / 
-            {user || <NavLink className="pt" onClick={login}> Login </NavLink>}
+            <NavLink className="pt" to="/"> Home </NavLink> 
+            {user || <NavLink className="pt" role="button" onClick={login}> {'>'}Login </NavLink>}
              
             {user && 
                 (<> 
                     <NavLink className="pt" to="/dashboard"> Dashboard</NavLink> 
-                    <NavLink role="button" className="outline" onClick={() => setUser(false)}> Logout </NavLink>
+                    <NavLink role="button" className="outline" onClick={() => setUser(false)}> {'>'}Logout </NavLink>
                 </>)   
             }
             </ul>
