@@ -5,6 +5,10 @@ import { uuContext } from "../context/UserContext";
 
 const Navbar = () => {
 
+    const login = () => {
+        setUser(true)
+    }
+
     const { user, setUser } = uuContext();
     //console.log(useContext(usercontext))
     return (
@@ -15,6 +19,8 @@ const Navbar = () => {
             </ul>
             <ul className="padding"> 
             <NavLink className="pt" to="/"> Home </NavLink> / 
+            {user || <NavLink className="pt" onClick={login}> Login </NavLink>}
+             
             {user && 
                 (<> 
                     <NavLink className="pt" to="/dashboard"> Dashboard</NavLink> 
