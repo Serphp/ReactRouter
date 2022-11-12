@@ -1,7 +1,7 @@
 import { Outlet } from "react-router-dom";
 
-const LayoutPrivate = () => {
+const Admin = () => {
     return <Outlet />;
 };
 
-export default LayoutPrivate;
+export default Admin;
