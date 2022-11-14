@@ -6,6 +6,7 @@ import Admin from "../layout/Admin";
 import Home from "../pages/Home";
 import Dashboard from "../pages/Dashboard";
 import RegistroUser from "../pages/RegistroUser";
+import SesionUser from "../pages/SesionUser";
 
 export const router = createBrowserRouter([
     {
@@ -19,6 +20,10 @@ export const router = createBrowserRouter([
             {
                 path: "/RegistroUser",
                 element: <RegistroUser />
+            },
+            {
+                path: "/SesionUser",
+                element: <SesionUser />
             },
             {
                 path: "/dashboard",

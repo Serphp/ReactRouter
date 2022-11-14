@@ -23,9 +23,9 @@ const Navbar = () => {
             <NavLink className="pt" to="/"> Home </NavLink> 
             {/*Invitado */}
             {user || 
-            (<> 
+            (<> {/*onClick={login}*/}
             <NavLink className="pt" to="/RegistroUser"> Registro </NavLink>
-            <NavLink className="pt" role="button" onClick={login}> {'>'}Login </NavLink>
+            <NavLink className="pt" role="button" to="/SesionUser"> {'>'}Login </NavLink>
             </>)
             }
             {/*Registrado */}

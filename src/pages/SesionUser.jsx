@@ -1,8 +1,8 @@
 //import axios from "axios";
 import { useState } from "react";
-import { crearUser } from "../Api/Auth";
+import { IniciarUser } from "../Api/Auth";
 
-const RegistroUser = () => {
+const SesionUser = () => {
 
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
@@ -10,7 +10,7 @@ const RegistroUser = () => {
     const SerphSubmit = async(e) => {
         e.preventDefault();
         try {
-            const data = await crearUser({
+            const data = await IniciarUser({
                 email: email,
                 password: password,
             });
@@ -24,8 +24,8 @@ const RegistroUser = () => {
     <>
 
     <hgroup>
-    <h2> Registro </h2>
-    <h3> Registrate para ver ss </h3>
+    <h2> Inicio de sesion </h2>
+    <h3> Ingresa con tu cuenta </h3>
     </hgroup>
     <form> 
         <div className="grid">
@@ -46,10 +46,10 @@ const RegistroUser = () => {
         value={password} onChange={e => setPassword(e.target.value)} 
         placeholder="Password"></input>
         </label>
-        <button onClick={SerphSubmit}> <b>Registrar</b> </button>
+        <button onClick={SerphSubmit}> Iniciar </button>
     </form>
     
     </>)
 }
 
-export default RegistroUser;
+export default SesionUser;
