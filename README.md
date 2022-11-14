@@ -13,8 +13,11 @@
 * `Vite` 
 * `Context` 
 * `Pico CSS` 
-* `Router v6.4`
 * `Firebase`
+
+## Dependencies
+* `Router v6.4`
+* `axios`
 
 ## Preview web
 <img src="./src/assets/img/browser_QrlTSvhemR.png" width="30%" /> 
