@@ -5,6 +5,7 @@ import Admin from "../layout/Admin";
 
 import Home from "../pages/Home";
 import Dashboard from "../pages/Dashboard";
+import Registro from "../pages/registro";
 
 export const router = createBrowserRouter([
     {
@@ -14,6 +15,10 @@ export const router = createBrowserRouter([
             {
                 index: true,
                 element: <Home />,
+            },
+            {
+                path: "/registro",
+                element: <Registro />
             },
             {
                 path: "/dashboard",

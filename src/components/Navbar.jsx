@@ -6,6 +6,8 @@ import { uuContext } from "../context/UserContext";
 const Navbar = () => {
 
     const login = () => {
+        //name: "Bryan",
+        //email: "Bryan@hotmail.com"
         setUser(true)
     }
 
@@ -19,8 +21,14 @@ const Navbar = () => {
             </ul>
             <ul className="padding"> 
             <NavLink className="pt" to="/"> Home </NavLink> 
-            {user || <NavLink className="pt" role="button" onClick={login}> {'>'}Login </NavLink>}
-             
+            {/*Invitado */}
+            {user || 
+            (<> 
+            <NavLink className="pt" class="constrast" to="/registro"> Registro </NavLink>
+            <NavLink className="pt" role="button" onClick={login}> {'>'}Login </NavLink>
+            </>)
+            }
+            {/*Registrado */}
             {user && 
                 (<> 
                     <NavLink className="pt" to="/dashboard"> Dashboard</NavLink> 
