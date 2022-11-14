@@ -1,5 +1,11 @@
-const Auth = () => {
-    return <h1> Hola</h1>;
-}
+import axios from "axios";
 
-export default Auth;
+export const crearUser = async({email, password}) => {
+        const {data} = await axios.post("https://identitytoolkit.googleapis.com/v1/accounts:signUp?key=AIzaSyB7WbedVpMk1dBnjpttkPn1vi-cid1Z9rg",
+        {
+            email,
+            password,
+            returnSecureToken: true,
+        }) 
+        return data;
+    };

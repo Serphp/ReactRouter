@@ -5,7 +5,7 @@ import Admin from "../layout/Admin";
 
 import Home from "../pages/Home";
 import Dashboard from "../pages/Dashboard";
-import Registro from "../pages/registro";
+import RegistroUser from "../pages/RegistroUser";
 
 export const router = createBrowserRouter([
     {
@@ -17,8 +17,8 @@ export const router = createBrowserRouter([
                 element: <Home />,
             },
             {
-                path: "/registro",
-                element: <Registro />
+                path: "/RegistroUser",
+                element: <RegistroUser />
             },
             {
                 path: "/dashboard",

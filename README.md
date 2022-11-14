@@ -2,7 +2,7 @@
 
 ```console
 * cd 
-* npm install react-router-dom@6.4
+* npm install react-router-dom@6.4 axios
 * npm install
 * npm run dev
 ```
@@ -14,6 +14,7 @@
 * `Context` 
 * `Pico CSS` 
 * `Router v6.4`
+* `Firebase`
 
 ## Preview web
 

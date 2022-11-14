@@ -24,7 +24,7 @@ const Navbar = () => {
             {/*Invitado */}
             {user || 
             (<> 
-            <NavLink className="pt" class="constrast" to="/registro"> Registro </NavLink>
+            <NavLink className="pt" to="/RegistroUser"> Registro </NavLink>
             <NavLink className="pt" role="button" onClick={login}> {'>'}Login </NavLink>
             </>)
             }

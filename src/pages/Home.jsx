@@ -2,7 +2,7 @@ const Home = () => {
     return (
         <>
         <hgroup>
-        <h2> Home </h2>
+        <h2> Home {import.meta.env.API_APP_SERPHP}</h2>
         <h3> Inicio de la pagina </h3>
         </hgroup>
 
