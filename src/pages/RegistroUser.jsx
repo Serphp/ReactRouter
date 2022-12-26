@@ -6,9 +6,15 @@ const RegistroUser = () => {
 
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
+    const [error, setError] = useState(null); // Estado del mensaje de error
 
     const SerphSubmit = async(e) => {
         e.preventDefault();
+        if (!emailValidator.validate(email)) {
+            setError('Por favor ingrese un correo electrónico válido');
+        } else {
+            setError(null);
+        }
         try {
             const data = await crearUser({
                 email: email,
@@ -29,7 +35,8 @@ const RegistroUser = () => {
     </hgroup>
     <form> 
         <div className="grid">
-            <label class="email">
+        {error && <div className="Highlighted">{error}</div>}
+            <label className="email">
                 Email
                 <input type="email" 
                 id="email" 
@@ -39,7 +46,7 @@ const RegistroUser = () => {
                 placeholder="Email Andress" required></input>
             </label>
         </div>
-        <label class="password">
+        <label className="password">
             Password
         <input type="password" id="password" 
         name="password" 

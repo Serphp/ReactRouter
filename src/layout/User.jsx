@@ -10,7 +10,7 @@ const User = () => {
             <Outlet />
 
             {/* FOOTER */}
-            <button class="contrast">
+            <button className="contrast">
             <a href="https://github.com/Serphp/ReactRouter"><kbd> <img src="src\icons\cat.png" width={30} /> Github</kbd></a>
             </button>
             
