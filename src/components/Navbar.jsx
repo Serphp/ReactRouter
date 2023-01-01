@@ -19,20 +19,20 @@ const Navbar = () => {
             <ul>
             <li id=""><kbd>{'>'} SerphpRoute</kbd></li>
             </ul>
-            <ul className="padding"> 
+            <ul> 
             <NavLink className="pt" to="/"> Home </NavLink> 
             {/*Invitado */}
             {user || 
             (<> {/*onClick={login}*/}
             <NavLink className="pt" to="/RegistroUser"> Registro </NavLink>
-            <NavLink className="pt" role="button" to="/SesionUser"> {'>'}Login </NavLink>
+            <NavLink className="pt" to="/SesionUser"> {'>'}Login </NavLink>
             </>)
             }
             {/*Registrado */}
             {user && 
                 (<> 
                     <NavLink className="pt" to="/dashboard"> Dashboard</NavLink> 
-                    <NavLink role="button" className="outline" onClick={() => setUser(false)}> {'>'}Logout </NavLink>
+                    <NavLink className="outline" onClick={() => setUser(false)}> {'>'}Logout </NavLink>
                 </>)   
             }
             </ul>

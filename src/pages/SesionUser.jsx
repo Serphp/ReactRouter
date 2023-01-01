@@ -1,8 +1,10 @@
 //import axios from "axios";
 import { useState } from "react";
 import { IniciarUser } from "../Api/Auth";
-import { Form, Button, Alert } from 'react-bootstrap';
 import emailValidator from 'email-validator';
+//import { useHistory } from 'react-router-dom'; // Importamos useHistory de react-router-dom
+//import axios from 'axios'; // Importamos axios para hacer peticiones HTTP
+
 
 const SesionUser = () => {
 
@@ -22,8 +24,8 @@ const SesionUser = () => {
         }
         if (password.length < 8) {
             setErrorp('La contraseña debe tener al menos 8 caracteres');
-        } else if (!/[A-Z]/.test(password) || !/\d/.test(password)) {
-            setErrorp('La contraseña debe tener al menos una letra mayúscula y un número');
+        // } else if (!/[A-Z]/.test(password) || !/\d/.test(password)) {
+        //     setErrorp('La contraseña debe tener al menos una letra mayúscula y un número');
         } else {
             setErrorp(null);
         }
@@ -38,6 +40,7 @@ const SesionUser = () => {
             console.log(error)
         }
     };
+
 
     return (
     <>
