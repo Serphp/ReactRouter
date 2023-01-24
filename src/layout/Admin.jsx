@@ -9,7 +9,7 @@ const Admin = () => {
     return (
         <>
             {/* <Outlet />*/}
-            {user ? <Outlet/> : <Serphreturn to="/"></Serphreturn>}
+            {user ? <Serphreturn to="/"></Serphreturn> : <Outlet/>}
         </>
     )
 };

@@ -2,8 +2,8 @@
 import { useState } from "react";
 import { IniciarUser } from "../Api/Auth";
 import emailValidator from 'email-validator';
-//import { useHistory } from 'react-router-dom'; // Importamos useHistory de react-router-dom
-//import axios from 'axios'; // Importamos axios para hacer peticiones HTTP
+import { Link, useNavigate } from 'react-router-dom';
+// import { useHistory } from 'react-router-dom'
 
 
 const SesionUser = () => {
@@ -12,8 +12,10 @@ const SesionUser = () => {
     const [password, setPassword] = useState("");
     const [error, setError] = useState(null);
     const [errorp, setErrorp] = useState(null);
+    // const history = useHistory()
 
-
+    const navigate = useNavigate();
+    
     const SerphSubmit = async(e) => {
         e.preventDefault();
         // TEST DE EMAIL
@@ -36,11 +38,12 @@ const SesionUser = () => {
                 password: password,
             });
         console.log(data)
+        navigate('/dashboard');
+        // history.push('/dashboard')
         } catch (error) {
             console.log(error)
         }
     };
-
 
     return (
     <>
